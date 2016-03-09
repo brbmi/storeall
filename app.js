@@ -101,7 +101,7 @@ function getEnv(vcapEnv, service) {
 var runport=3000;
 runport=app.get('port');
 http.createServer(app).listen(runport, function(){
-console.log('Express server listening on port ' + runport);
+console.log('Express server listening on port: ' + runport);
 });
 
 module.exports = app;
