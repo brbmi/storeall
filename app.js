@@ -87,7 +87,7 @@ app.use(function(err, req, res, next) {
 //retrieve the service environment JSON object
 function getEnv(vcapEnv, service) {
    if (vcapEnv === undefined){
-	   return vcapEnv;
+	   return undefined;
    }
    for (var serviceOfferingName in vcapEnv) {
    	    if (vcapEnv.hasOwnProperty(serviceOfferingName) &&
