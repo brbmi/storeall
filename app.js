@@ -29,8 +29,8 @@ if (creds!==undefined){
    nano = require('nano')('http://localhost:5984');
 }   
 //create a db if one does not exist...if it exist an error is returned, we don't care
-nano.db.create('storeall2');
-var db = nano.db.use('storeall2');
+nano.db.create('storeall');
+var db = nano.db.use('storeall');
 
 
 // view engine setup
